@@ -2,4 +2,4 @@ If you are looking for galpy documentation, that can be found [here](http://jobo
 
 Development pages:
 
-* galpy [Roadmap](Roadmap)
+* galpy [Roadmap](wiki/Roadmap)
