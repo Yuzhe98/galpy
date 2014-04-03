@@ -6,4 +6,8 @@ Longer term goals for galpy
 
 * Support to sample from DFs and at least write command files that allow these to be evolved with gadget, NEMO, or similar.
 
-* Spheroid DFs.
+* Spheroid DFs: e.g., Binney and Posti's work on extending ergodic, Eddington DFs to flattened DFs.
+
+* Support for simple N-body simulations within galpy (e.g., [small-N]-body interactions).
+
+Please let me know if you are interested in helping out with any of these!
