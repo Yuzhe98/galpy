@@ -1,4 +1,4 @@
-If you are looking for galpy documentation, that can be found [here](http://jobovy.github.com/galpy).
+If you are looking for galpy documentation, that can be found [here](http://galpy.readthedocs.org/).
 
 Development pages:
 
