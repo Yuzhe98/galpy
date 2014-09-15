@@ -3,3 +3,4 @@ If you are looking for galpy documentation, that can be found [here](http://galp
 Development pages:
 
 * galpy [[Roadmap]]
+* [Possible galpy extensions](Possible-galpy-extensions)
