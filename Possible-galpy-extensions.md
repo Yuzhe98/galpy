@@ -11,3 +11,14 @@ Some of these are simple and could be done quickly as part of learning how to wo
     - [ ] TwoPowerSphericalPotentials with flattening in the density (halo model in Binney & Tremaine 2008)
     - [ ] Double exponential disk with a central hole (ISM model in Binney & Tremaine 2008)
     - [ ] Models 1 and 2 of Binney & Tremaine (2008) [requires the three potentials above)
+- [ ] Add adiabatically-contracted NFW potentials or add adiabatic contraction more generally
+- [ ] *Add support for dynamical friction (note: there is an old branch where this was started that could serve as a starting point)
+- [ ] *Better orbit integration: Add interpolation methods for integrators such that the step size can be larger than the requested output time step (right now, the step size is always smaller than the requested output step size, but for sufficiently smooth potentials, the step size can sometimes be increased with intermediate points found through interpolation; see NR).
+- [ ] Implement simple spherical DFs (these will only be merged into the main repository if deemed useful; i.e., if you have used it in a paper).
+- [ ] Add frequencies and angles for the adiabatic approximation:
+     - [ ] in Python
+     - [ ] in C
+- [ ] Implement spherical actionAngle calculations in C in a similar way as actionAngleAdiabatic or actionAngleStaeckel.
+- [ ] *Add support for interacting with N-body codes like NEMO or Gadget. This includes
+     - [ ] Translate galpy potentials to external potentials that can be used with these codes;
+     - [ ] Use galpy to sample initial conditions (e.g., for a disk using quasiisothermaldf) and write commands/files to run these through N-body codes (with or without an external potential).
