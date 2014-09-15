@@ -17,6 +17,8 @@ Potentials
     - [ ] TwoPowerSphericalPotentials with flattening in the density (halo model in Binney & Tremaine 2008)
     - [ ] Double exponential disk with a central hole (ISM model in Binney & Tremaine 2008)
     - [ ] Models 1 and 2 of Binney & Tremaine (2008) [requires the three potentials above)
+    - [ ] A three-dimensional spiral potential
+    - [ ] A three-dimensional bar potential
 - [ ] Add adiabatically-contracted NFW potentials or add adiabatic contraction more generally
 
 Orbit integration
