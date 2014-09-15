@@ -19,6 +19,7 @@ Some of these are simple and could be done quickly as part of learning how to wo
      - [ ] in Python
      - [ ] in C
 - [ ] Implement spherical actionAngle calculations in C in a similar way as actionAngleAdiabatic or actionAngleStaeckel.
+- [ ] *Implement the integration of the phase-space volume (using Orbit.integrate_dxdv) for 3D orbits. This will require writing the integration routine that uses all of the relevant second derivatives of the potential, both in python and C, and implementing the necessary second deritvatives for a large number of potentials (in python and C).
 - [ ] *Add support for interacting with N-body codes like NEMO or Gadget. This includes
      - [ ] Translate galpy potentials to external potentials that can be used with these codes;
      - [ ] Use galpy to sample initial conditions (e.g., for a disk using quasiisothermaldf) and write commands/files to run these through N-body codes (with or without an external potential).
