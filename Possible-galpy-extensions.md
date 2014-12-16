@@ -19,6 +19,7 @@ Potentials
     - [ ] Models 1 and 2 of Binney & Tremaine (2008) [requires the three potentials above)
     - [ ] A three-dimensional spiral potential
     - [ ] A three-dimensional bar potential
+    - [ ] A triaxial Staeckel potential in a sensible way
 - [ ] Add adiabatically-contracted NFW potentials or add adiabatic contraction more generally
 
 Orbit integration
@@ -27,6 +28,7 @@ Orbit integration
 - [ ] *Add support for dynamical friction (note: there is an old branch where this was started that could serve as a starting point)
 - [ ] *Better orbit integration: Add interpolation methods for integrators such that the step size can be larger than the requested output time step (right now, the step size is always smaller than the requested output step size, but for sufficiently smooth potentials, the step size can sometimes be increased with intermediate points found through interpolation; see NR).
 - [ ] *Implement the integration of the phase-space volume (using Orbit.integrate_dxdv) for 3D orbits. This will require writing the integration routine that uses all of the relevant second derivatives of the potential, both in python and C, and implementing the necessary second deritvatives for a large number of potentials (in python and C).
+- [ ] Add the IAS15 symplectic integrator ([Rein & Spiegel 2015](http://adsabs.harvard.edu/abs/2015MNRAS.446.1424R)); cannot use the rebound version, as that is incompatible GPL'ed code.
 
 Action-angle
 -------------
@@ -36,8 +38,8 @@ Action-angle
 - [ ] Implement spherical actionAngle calculations in C in a similar way as actionAngleAdiabatic or actionAngleStaeckel.
 - [ ] Implement the transformation from actions and angles to configuration space for the isochrone potential
 - [ ] Implement the transformation from actions and angles to configuration space for spherical potentials
-- [ ] Implement the triaxial Staeckel fudge ([Sanders & Binney 2015](http://adsabs.harvard.edu/abs/2014arXiv1412.2093S)
-- [ ] *Implement the torus machinery
+- [ ] Implement the triaxial Staeckel fudge ([Sanders & Binney 2015](http://adsabs.harvard.edu/abs/2014arXiv1412.2093S))
+- [ ] *Implement the torus machinery or interact with Paul McMillan's code ([this github repository](https://github.com/PaulMcMillan-Astro/Torus)
 
 Distribution functions
 ------------------------
