@@ -36,6 +36,7 @@ Action-angle
 - [ ] Implement spherical actionAngle calculations in C in a similar way as actionAngleAdiabatic or actionAngleStaeckel.
 - [ ] Implement the transformation from actions and angles to configuration space for the isochrone potential
 - [ ] Implement the transformation from actions and angles to configuration space for spherical potentials
+- [ ] Implement the triaxial Staeckel fudge ([Sanders & Binney 2015](http://adsabs.harvard.edu/abs/2014arXiv1412.2093S)
 - [ ] *Implement the torus machinery
 
 Distribution functions
