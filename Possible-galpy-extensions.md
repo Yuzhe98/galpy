@@ -20,6 +20,7 @@ Potentials
     - [ ] A three-dimensional spiral potential
     - [ ] A three-dimensional bar potential
     - [ ] A triaxial Staeckel potential in a sensible way
+    - [ ] A three-Miyamoto-Nagai disk approximation to an exponential disk from [Smith et al. (2015)](http://arxiv.org/abs/1502.00627)
 - [ ] Add adiabatically-contracted NFW potentials or add adiabatic contraction more generally
 
 Orbit integration
