@@ -1,7 +1,7 @@
 Introduction
 -------------
 
-The following is a brief list of possible extensions that would be useful to implement. I am not directly working on any of these and am not planning on it, but if you want to add something along these lines to galpy, I would be happy to consult. To be accepted in the main repository through pull request all extensions should at the very least add documentation to the API and tests to the test suite.
+The following is a brief list of possible extensions that would be useful to implement. I am not directly working on any of these and am not planning on it, but if you want to add something along these lines to galpy, I would be happy to consult. To be accepted in the main repository through pull request all extensions should at the very least add documentation to the API and tests to the test suite. Please let the maintainer of the code know if you start working on one of these.
 
 Some of these are simple and could be done quickly as part of learning how to work with galpy. Other would require more significant changes to the structure of galpy. The larger extensions are marked by *
 
@@ -18,8 +18,9 @@ Potentials
     - [ ] Double exponential disk with a central hole (ISM model in Binney & Tremaine 2008)
     - [ ] Models 1 and 2 of Binney & Tremaine (2008) [requires the three potentials above)
     - [ ] A three-dimensional spiral potential
-    - [ ] A three-dimensional bar potential
+    - [ ] A three-dimensional bar potential: a Ferrers bar
     - [ ] A triaxial Staeckel potential in a sensible way
+    - [ ] Basis function expansions, w/ a way to compute them for a given potential. For example, [Hernquist & Ostriker](http://adsabs.harvard.edu/abs/1992ApJ...386..375H)
     - [x] A three-Miyamoto-Nagai disk approximation to an exponential disk from [Smith et al. (2015)](http://arxiv.org/abs/1502.00627)
 - [ ] Add adiabatically-contracted NFW potentials or add adiabatic contraction more generally
 
@@ -30,6 +31,7 @@ Orbit integration
 - [ ] *Better orbit integration: Add interpolation methods for integrators such that the step size can be larger than the requested output time step (right now, the step size is always smaller than the requested output step size, but for sufficiently smooth potentials, the step size can sometimes be increased with intermediate points found through interpolation; see NR).
 - [ ] *Implement the integration of the phase-space volume (using Orbit.integrate_dxdv) for 3D orbits. This will require writing the integration routine that uses all of the relevant second derivatives of the potential, both in python and C, and implementing the necessary second deritvatives for a large number of potentials (in python and C).
 - [ ] Add the IAS15 symplectic integrator ([Rein & Spiegel 2015](http://adsabs.harvard.edu/abs/2015MNRAS.446.1424R)); cannot use the rebound version, as that is incompatible GPL'ed code.
+- [ ] Add the Dormand-Prince 853 integrator.
 
 Action-angle
 -------------
@@ -40,11 +42,13 @@ Action-angle
 - [ ] Implement the transformation from actions and angles to configuration space for the isochrone potential
 - [ ] Implement the transformation from actions and angles to configuration space for spherical potentials
 - [ ] Implement the triaxial Staeckel fudge ([Sanders & Binney 2015](http://adsabs.harvard.edu/abs/2014arXiv1412.2093S))
+- [ ] Implement frequencies from Fourier analysis of integrated orbits (see [Binney & Spergel](http://adsabs.harvard.edu/abs/1982ApJ...252..308B), [Laskar](http://adsabs.harvard.edu/abs/1990Icar...88..266L), or [Valluri & Merritt](http://adsabs.harvard.edu/abs/1998ApJ...506..686V))
 - [ ] *Implement the torus machinery or interact with Paul McMillan's code ([this github repository](https://github.com/PaulMcMillan-Astro/Torus))
 
 Distribution functions
 ------------------------
 - [ ] Implement simple spherical DFs (these will only be merged into the main repository if deemed useful; i.e., if you have used it in a paper).
+- [ ] Implement a particle-spray model for tidal streams (see, e.g., [Fardal et al.](http://adsabs.harvard.edu/abs/2015MNRAS.452..301F))
 
 Miscellaneous
 ---------------
