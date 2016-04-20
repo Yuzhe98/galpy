@@ -27,7 +27,8 @@ Potentials
 Orbit integration
 ------------------
 
-- [ ] *Add support for dynamical friction (note: there is an [old branch](https://github.com/jobovy/galpy/tree/dev_galpy_dynamfric) where this was started that could serve as a starting point)
+- [ ] *Add support for dynamical friction (note: there is an [old branch](https://github.com/jobovy/galpy/tree/dev_galpy_dynamfric) where this was started that could serve as a starting point; there is also a [newer branch](https://github.com/jobovy/galpy/tree/dynamfric))
+- [ ] Integrate R(Z)Orbits in C without integrating phi [see [this issue](https://github.com/jobovy/galpy/issues/28)]
 - [ ] *Better orbit integration: Add interpolation methods for integrators such that the step size can be larger than the requested output time step (right now, the step size is always smaller than the requested output step size, but for sufficiently smooth potentials, the step size can sometimes be increased with intermediate points found through interpolation; see NR).
 - [ ] *Implement the integration of the phase-space volume (using Orbit.integrate_dxdv) for 3D orbits. This will require writing the integration routine that uses all of the relevant second derivatives of the potential, both in python and C, and implementing the necessary second deritvatives for a large number of potentials (in python and C).
 - [ ] Add the IAS15 symplectic integrator ([Rein & Spiegel 2015](http://adsabs.harvard.edu/abs/2015MNRAS.446.1424R)); cannot use the rebound version, as that is incompatible GPL'ed code.
@@ -43,12 +44,19 @@ Action-angle
 - [ ] Implement the transformation from actions and angles to configuration space for spherical potentials
 - [ ] Implement the triaxial Staeckel fudge ([Sanders & Binney 2015](http://adsabs.harvard.edu/abs/2014arXiv1412.2093S))
 - [ ] Implement frequencies from Fourier analysis of integrated orbits (see [Binney & Spergel](http://adsabs.harvard.edu/abs/1982ApJ...252..308B), [Laskar](http://adsabs.harvard.edu/abs/1990Icar...88..266L), or [Valluri & Merritt](http://adsabs.harvard.edu/abs/1998ApJ...506..686V))
+- [ ] Implement actionAngleIsochroneApprox for triaxial potentials; requires to do the phi fit in actionsFreqsAngles as well.
 - [ ] *Implement the torus machinery or interact with Paul McMillan's code ([this github repository](https://github.com/PaulMcMillan-Astro/Torus))
 
 Distribution functions
 ------------------------
 - [ ] Implement simple spherical DFs (these will only be merged into the main repository if deemed useful; i.e., if you have used it in a paper).
+- [ ] Generalize diskdf to be able to use any potential [see [this issue](https://github.com/jobovy/galpy/issues/7)]
 - [ ] Implement a particle-spray model for tidal streams (see, e.g., [Fardal et al.](http://adsabs.harvard.edu/abs/2015MNRAS.452..301F))
+- [ ] Improvements in the DF for a tidal stream:
+  - [ ] Perform actionAngle approximations as (x,v) -> (J,O,a) rather than (R,vR,...) -> (J,O,a) [see [this issue](https://github.com/jobovy/galpy/issues/113)]
+  - [ ] Add error convolutions to callMarg [see [this issue](https://github.com/jobovy/galpy/issues/114)]
+  - [ ] Look into including the Jacobian (l,b,...) -> (X,V) properly in lb callMarg [see [this issue](https://github.com/jobovy/galpy/issues/115)]
+  - [ ] Use detdOdJp from nearest trackpoint when evaluating the DF, or interpolate between two nearest, as done in streamgapdf to compute the kicks due to a subhalo interaction [see [this issue](https://github.com/jobovy/galpy/issues/197)]
 
 Miscellaneous
 ---------------
