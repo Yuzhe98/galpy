@@ -44,7 +44,7 @@ Action-angle
 - [ ] Implement the transformation from actions and angles to configuration space for spherical potentials
 - [ ] Implement the triaxial Staeckel fudge ([Sanders & Binney 2015](http://adsabs.harvard.edu/abs/2014arXiv1412.2093S))
 - [ ] Implement frequencies from Fourier analysis of integrated orbits (see [Binney & Spergel](http://adsabs.harvard.edu/abs/1982ApJ...252..308B), [Laskar](http://adsabs.harvard.edu/abs/1990Icar...88..266L), or [Valluri & Merritt](http://adsabs.harvard.edu/abs/1998ApJ...506..686V))
-- [ ] Implement actionAngleIsochroneApprox for triaxial potentials; requires to do the phi fit in actionsFreqsAngles as well.
+- [ ] Implement actionAngleIsochroneApprox for triaxial potentials; requires to do the phi fit in actionsFreqsAngles as well (in progress in [jobovy/twopowertri](https://github.com/jobovy/galpy/tree/twopowertri)).
 - [ ] *Implement the torus machinery or interact with Paul McMillan's code ([this github repository](https://github.com/PaulMcMillan-Astro/Torus))
 
 Distribution functions
