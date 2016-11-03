@@ -46,8 +46,9 @@ Action-angle
 - [ ] Implement the transformation from actions and angles to configuration space for spherical potentials
 - [ ] Implement the triaxial Staeckel fudge ([Sanders & Binney 2015](http://adsabs.harvard.edu/abs/2014arXiv1412.2093S))
 - [ ] Implement frequencies from Fourier analysis of integrated orbits (see [Binney & Spergel](http://adsabs.harvard.edu/abs/1982ApJ...252..308B), [Laskar](http://adsabs.harvard.edu/abs/1990Icar...88..266L), or [Valluri & Merritt](http://adsabs.harvard.edu/abs/1998ApJ...506..686V))
-- [ ] Implement actionAngleIsochroneApprox for triaxial potentials; requires to do the phi fit in actionsFreqsAngles as well (in progress in [jobovy/twopowertri](https://github.com/jobovy/galpy/tree/twopowertri)).
-- [ ] *Implement the torus machinery or interact with Paul McMillan's code ([this github repository](https://github.com/PaulMcMillan-Astro/Torus))
+- [x] Implement actionAngleIsochroneApprox for triaxial potentials; requires to do the phi fit in actionsFreqsAngles as well (**done!** in [jobovy/twopowertri](https://github.com/jobovy/galpy/tree/twopowertri)).
+- [x] *Basic interaction with Paul McMillan's TorusMapper code ([this github repository](https://github.com/PaulMcMillan-Astro/Torus))
+- [ ] *Implement the torus machinery directly in a robust manner
 
 Distribution functions
 ------------------------
@@ -63,5 +64,5 @@ Distribution functions
 Miscellaneous
 ---------------
 - [ ] *Add support for interacting with N-body codes like NEMO or Gadget. This includes
-     - [ ] Translate galpy potentials to external potentials that can be used with these codes;
+     - [x] Translate galpy potentials to external potentials that can be used with these codes; **done!** for NEMO (at least partially)
      - [ ] Use galpy to sample initial conditions (e.g., for a disk using quasiisothermaldf) and write commands/files to run these through N-body codes (with or without an external potential).
