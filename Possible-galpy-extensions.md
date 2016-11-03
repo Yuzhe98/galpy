@@ -21,10 +21,10 @@ Potentials
     - [ ] A three-dimensional bar potential: a Ferrers bar
     - [ ] A triaxial Staeckel potential in a sensible way
     - [x] Basis function expansions, w/ a way to compute them for a given potential. For example, [Hernquist & Ostriker](http://adsabs.harvard.edu/abs/1992ApJ...386..375H) (**done!** in [SeaifanAladdin/SCF](https://github.com/SeaifanAladdin/galpy/tree/SCF))
-    - [x] Basis function expansions for the disk (see Binney & Tremaine)
+    - [ ] *Basis function expansions for the disk (see Binney & Tremaine)
     - [x] A three-Miyamoto-Nagai disk approximation to an exponential disk from [Smith et al. (2015)](http://arxiv.org/abs/1502.00627)
 - [ ] Add adiabatically-contracted NFW potentials or add adiabatic contraction more generally
-- [ ] Add rotation, tumbling, and movement of center of potential more generally as a wrapper around other potentials
+- [ ] *Add rotation, tumbling, and movement of center of potential more generally as a wrapper around other potentials
 
 Orbit integration
 ------------------
