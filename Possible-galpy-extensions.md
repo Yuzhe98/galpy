@@ -14,15 +14,16 @@ Potentials
     - [ ] A radially exponential disk with a vertical sech profile, or with a general vertical profile
     - [ ] A power-law potential with flattening in the density
     - [ ] A power-law potential with an exponential cut-off and flattening in the density (bulge model in Binney & Tremaine 2008)
-    - [ ] TwoPowerSphericalPotentials with flattening in the density (halo model in Binney & Tremaine 2008) (in progress in [jobovy/twopowertri](https://github.com/jobovy/galpy/tree/twopowertri))
+    - [x] TwoPowerSphericalPotentials with flattening in the density (halo model in Binney & Tremaine 2008) (**done!** in [jobovy/twopowertri](https://github.com/jobovy/galpy/tree/twopowertri))
     - [ ] Double exponential disk with a central hole (ISM model in Binney & Tremaine 2008)
     - [ ] Models 1 and 2 of Binney & Tremaine (2008) [requires the three potentials above)
     - [ ] A three-dimensional spiral potential
     - [ ] A three-dimensional bar potential: a Ferrers bar
     - [ ] A triaxial Staeckel potential in a sensible way
-    - [ ] Basis function expansions, w/ a way to compute them for a given potential. For example, [Hernquist & Ostriker](http://adsabs.harvard.edu/abs/1992ApJ...386..375H) (in progress in [SeaifanAladdin/SCF](https://github.com/SeaifanAladdin/galpy/tree/SCF))
+    - [x] Basis function expansions, w/ a way to compute them for a given potential. For example, [Hernquist & Ostriker](http://adsabs.harvard.edu/abs/1992ApJ...386..375H) (**done!** in [SeaifanAladdin/SCF](https://github.com/SeaifanAladdin/galpy/tree/SCF))
     - [x] A three-Miyamoto-Nagai disk approximation to an exponential disk from [Smith et al. (2015)](http://arxiv.org/abs/1502.00627)
 - [ ] Add adiabatically-contracted NFW potentials or add adiabatic contraction more generally
+- [ ] Add rotation, tumbling, and movement of center of potential more generally as a wrapper around other potentials
 
 Orbit integration
 ------------------
@@ -30,7 +31,7 @@ Orbit integration
 - [ ] *Add support for dynamical friction (note: there is an [old branch](https://github.com/jobovy/galpy/tree/dev_galpy_dynamfric) where this was started that could serve as a starting point; there is also a [newer branch](https://github.com/jobovy/galpy/tree/dynamfric))
 - [ ] Integrate R(Z)Orbits in C without integrating phi [see [this issue](https://github.com/jobovy/galpy/issues/28)]
 - [ ] *Better orbit integration: Add interpolation methods for integrators such that the step size can be larger than the requested output time step (right now, the step size is always smaller than the requested output step size, but for sufficiently smooth potentials, the step size can sometimes be increased with intermediate points found through interpolation; see NR).
-- [ ] *Implement the integration of the phase-space volume (using Orbit.integrate_dxdv) for 3D orbits. This will require writing the integration routine that uses all of the relevant second derivatives of the potential, both in python and C, and implementing the necessary second deritvatives for a large number of potentials (in python and C).
+- [ ] *Implement the integration of the phase-space volume (using Orbit.integrate_dxdv) for 3D orbits. This will require writing the integration routine that uses all of the relevant second derivatives of the potential, both in python and C, and implementing the necessary second derivatives for a large number of potentials (in python and C).
 - [ ] Add the IAS15 symplectic integrator ([Rein & Spiegel 2015](http://adsabs.harvard.edu/abs/2015MNRAS.446.1424R)); cannot use the rebound version, as that is incompatible GPL'ed code.
 - [ ] Add the Dormand-Prince 853 integrator.
 
