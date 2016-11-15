@@ -24,7 +24,9 @@ Potentials
     - [ ] *Basis function expansions for the disk (see Binney & Tremaine)
     - [x] A three-Miyamoto-Nagai disk approximation to an exponential disk from [Smith et al. (2015)](http://arxiv.org/abs/1502.00627)
 - [ ] Add adiabatically-contracted NFW potentials or add adiabatic contraction more generally
+- [ ] Wrapper that allows mass growth over time
 - [ ] *Add rotation, tumbling, and movement of center of potential more generally as a wrapper around other potentials
+- [ ] *Add rotation, tumbling, and movement of center of potential more generally as a wrapper around other potentials in a sensible way in C
 
 Orbit integration
 ------------------
