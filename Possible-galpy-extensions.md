@@ -18,10 +18,10 @@ Potentials
     - [ ] Double exponential disk with a central hole (ISM model in Binney & Tremaine 2008)
     - [ ] Models 1 and 2 of Binney & Tremaine (2008) [requires the three potentials above)
     - [ ] A three-dimensional spiral potential
-    - [ ] A three-dimensional bar potential: a Ferrers bar
+    - [ ] A three-dimensional bar potential: a Ferrers bar (done! in [smoh/ferrers], but only in Python so far)
     - [ ] A triaxial Staeckel potential in a sensible way
     - [x] Basis function expansions, w/ a way to compute them for a given potential. For example, [Hernquist & Ostriker](http://adsabs.harvard.edu/abs/1992ApJ...386..375H) (**done!** in [SeaifanAladdin/SCF](https://github.com/SeaifanAladdin/galpy/tree/SCF))
-    - [ ] *Basis function expansions for the disk (see Binney & Tremaine)
+    - [ ] *Basis function expansions for the disk (see Binney & Tremaine); for axisymmetric potentials this could potentially be done using a modification of the method of Dehnen & Binney (1998): use approximate rho(R,z) = f(R) h(z) and solve Poisson equation for their Phi_ME using SCF.
     - [x] A three-Miyamoto-Nagai disk approximation to an exponential disk from [Smith et al. (2015)](http://arxiv.org/abs/1502.00627)
 - [ ] Add adiabatically-contracted NFW potentials or add adiabatic contraction more generally
 - [ ] Wrapper that allows mass growth over time
