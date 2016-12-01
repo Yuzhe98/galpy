@@ -12,8 +12,8 @@ Potentials
     - [ ] A Tri-axial logarithmic potential
     - [ ] An Einasto density profile
     - [ ] A radially exponential disk with a vertical sech profile, or with a general vertical profile
-    - [ ] A power-law potential with flattening in the density
-    - [ ] A power-law potential with an exponential cut-off and flattening in the density (bulge model in Binney & Tremaine 2008)
+    - [ ] A power-law potential with flattening in the density (straightforward based on TwoPowerTriaxialPotential)
+    - [ ] A power-law potential with an exponential cut-off and flattening in the density (bulge model in Binney & Tremaine 2008; straightforward based on TwoPowerTriaxialPotential)
     - [x] TwoPowerSphericalPotentials with flattening in the density (halo model in Binney & Tremaine 2008) (**done!** in [jobovy/twopowertri](https://github.com/jobovy/galpy/tree/twopowertri))
     - [ ] Double exponential disk with a central hole (ISM model in Binney & Tremaine 2008)
     - [ ] Models 1 and 2 of Binney & Tremaine (2008) [requires the three potentials above)
