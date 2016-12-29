@@ -27,6 +27,8 @@ Potentials
 - [ ] Wrapper that allows mass growth over time
 - [ ] !Add rotation, tumbling, and movement of center of potential more generally as a wrapper around other potentials
 - [ ] !Add rotation, tumbling, and movement of center of potential more generally as a wrapper around other potentials in a sensible way in C
+- [ ] Add general methods to return forces in rectangular coordinates (building them from the standard Rforce,zforce,phiforce).
+- [ ] Add general methods to return forces in spherical coordinates (building them from the standard Rforce,zforce,phiforce).
 
 Orbit integration
 ------------------
