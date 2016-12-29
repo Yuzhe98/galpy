@@ -11,7 +11,7 @@ Potentials
 - [ ] Add new potentials (see [#232](https://github.com/jobovy/galpy/pull/232) or [#242](https://github.com/jobovy/galpy/pull/242) for example pull requests for new potentials): e.g.,
     - [ ] A Tri-axial logarithmic potential
     - [ ] An Einasto density profile
-    - [ ] A radially exponential disk with a vertical sech profile, or with a general vertical profile
+    - [x] A radially exponential disk with a vertical sech profile, or with a general vertical profile (**done!** through DiskSCFPotential)
     - [ ] A power-law potential with flattening in the density (straightforward based on TwoPowerTriaxialPotential)
     - [ ] A power-law potential with an exponential cut-off and flattening in the density (bulge model in Binney & Tremaine 2008; straightforward based on TwoPowerTriaxialPotential)
     - [x] TwoPowerSphericalPotentials with flattening in the density (halo model in Binney & Tremaine 2008)
