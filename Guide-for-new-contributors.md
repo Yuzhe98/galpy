@@ -18,3 +18,14 @@ Another way to contribute is to add a new tutorial in the ``Tutorials`` section 
 
 If you have sphinx installed, you can generate the documentation locally using the ``Makefile`` in ``doc/`` by doing ``make html``. The default setup is to build the documentation in a directory ``BASE/galpy-docs/`` if your galpy repository is ``BASE/galpy``. Especially if you are adding a tutorial or a larger part of documentation, it is good to check that everything looks okay before submitting the pull request.
 
+## Adding to the core package
+
+Now you are ready to start contributing to the core package! galpy has both Python and C code and the simplest additions only concern the Python code. A common addition is to add a new, generally-useful gravitational potential to the ``galpy.potential`` subpackage; this is not too difficult providing the potential is simple and you only add it in Python. [This page](http://galpy.readthedocs.io/en/latest/potential.html#adding-potentials-to-the-galpy-framework) in the documentation lists all of the steps necessary to add a potential to the code. In addition to this, you should add tests to ``nose/test_potential.py`` that test the new potential (note that the consistency between the potential, force, and any implemented second derivatives are tested automatically for the default setting of the new potential). You might have to fiddle with the tolerances of some of the tests in ``nose/test_potential.py`` and ``nose/test_orbit.py``. You should also add a page to the API documentation in ``doc/source/reference/`` with the class definition of the new potential (these are simple two-line pages, follow the lead of one of the existing potentials like [that of the Plummer potential](https://raw.githubusercontent.com/jobovy/galpy/master/doc/source/reference/potentialplummer.rst).
+
+Other simple changes would be additional ``galpy.orbit.Orbit`` methods (if your favorite orbital property is not included already) or other ways to plot an Orbit. Tests for these would be pretty simple and would be added to ``nose/test_orbit.py``.
+
+This process can be challenging, but the galpy developers are here to help you! If you get stuck, don't hesitate to contact the developers for help or start the pull request and we can help you out that way.
+
+## More ambitious additions
+
+If you are still reading and are still willing to contribute to galpy's code, take a look at the [possible galpy extensions](https://github.com/jobovy/galpy/wiki/Possible-galpy-extensions) listed on the wiki. These are somewhat more complicated (although some are relatively easy), but if they are useful to your work, consider implementing them for general use. Again, the galpy developers are more than happy to help out with getting these into the code!
