@@ -30,8 +30,8 @@ Potentials
 - [ ] Add general methods to return forces in rectangular coordinates (building them from the standard Rforce,zforce,phiforce).
 - [ ] Add general methods to return forces in spherical coordinates (building them from the standard Rforce,zforce,phiforce).
 
-Orbit integration
-------------------
+Orbit integration and orbits
+------------------------------
 
 - [ ] !Add support for dynamical friction (note: there is an [old branch](https://github.com/jobovy/galpy/tree/dev_galpy_dynamfric) where this was started that could serve as a starting point; there is also a [newer branch](https://github.com/jobovy/galpy/tree/dynamfric))
 - [ ] Integrate R(Z)Orbits in C without integrating phi [see [this issue](https://github.com/jobovy/galpy/issues/28)]
@@ -39,6 +39,8 @@ Orbit integration
 - [ ] !Implement the integration of the phase-space volume (using Orbit.integrate_dxdv) for 3D orbits. This will require writing the integration routine that uses all of the relevant second derivatives of the potential, both in python and C, and implementing the necessary second derivatives for a large number of potentials (in python and C).
 - [ ] Add the IAS15 symplectic integrator ([Rein & Spiegel 2015](http://adsabs.harvard.edu/abs/2015MNRAS.446.1424R)); cannot use the rebound version, as that is incompatible GPL'ed code.
 - [ ] Add the Dormand-Prince 853 integrator.
+- [ ] Allow orbits to be plotted in a rotating frame
+- [ ] Allow uncertainties to be provided at Orbit initialization and uncertainties on orbital parameters to be computed with Monte Carlo simulations
 
 Action-angle
 -------------
