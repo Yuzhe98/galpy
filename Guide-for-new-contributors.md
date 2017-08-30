@@ -1,6 +1,6 @@
 # Guide for new contributors
 
-If you want to start contributing to galpy, here are a few guidelines to help you get started. Because galpy has a [very high test coverage](https://coveralls.io/r/jobovy/galpy?branch=master) and [highly complete documentation](http://galpy.readthedocs.org/en/latest/) (and we would like to keep this high), contributing code to the core package can be a little challenging (because all new code requires tests and documentation). This guide provides a few ways to start contributing in a relatively simple manner.
+If you want to start contributing to galpy, whether to simply open an issue or to add something to the code through a pull request, here are a few guidelines to help you get started. Because galpy has a [very high test coverage](https://coveralls.io/r/jobovy/galpy?branch=master) and [highly complete documentation](http://galpy.readthedocs.org/en/latest/) (and we would like to keep this high), contributing code to the core package can be a little challenging (because all new code requires tests and documentation). This guide provides a few ways to start contributing in a relatively simple manner.
 
 ## Contributing without touching the code!
 
