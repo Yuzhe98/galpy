@@ -4,3 +4,4 @@ Development pages:
 
 * galpy [[Roadmap]]
 * [Possible galpy extensions](Possible-galpy-extensions)
+* [Possibilities for a v2 version](Possibilities-for-a-v2-version)
