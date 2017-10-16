@@ -20,5 +20,5 @@
 
 ## Orbit framework
 
-* Use a single orbit class, rather than current ``FullOrbit``, ``RZOrbit``, etc. Can use similar approach to subclassing as for ``WrapperPotential``/``planarWrapperPotential``?
-* More clearly distinguish between an orbit that has not been integrated yet and one that has?
+* **Use a single orbit class**, rather than current ``FullOrbit``, ``RZOrbit``, etc. Can use similar approach to subclassing as for ``WrapperPotential``/``planarWrapperPotential``?
+* **More clearly distinguish between an orbit that has not been integrated yet and one that has?**
