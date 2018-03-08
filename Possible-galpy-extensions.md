@@ -9,7 +9,7 @@ Potentials
 -----------
 
 - [ ] Add new potentials (see [#232](https://github.com/jobovy/galpy/pull/232) or [#242](https://github.com/jobovy/galpy/pull/242) for example pull requests for new potentials): e.g.,
-    - [ ] A Tri-axial logarithmic potential
+    - [x] A Tri-axial logarithmic potential
     - [ ] An Einasto density profile
     - [x] A radially exponential disk with a vertical sech profile, or with a general vertical profile (**done!** through DiskSCFPotential)
     - [ ] A power-law potential with flattening in the density (straightforward based on TwoPowerTriaxialPotential)
