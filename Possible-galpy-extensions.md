@@ -47,7 +47,7 @@ Orbit integration and orbits
 - [ ] Add the Dormand-Prince 853 integrator.
 - [ ] Allow orbits to be plotted in a rotating frame (i.e., write a wrapper that makes use of the general orbit plotting)
 - [ ] Allow uncertainties to be provided at Orbit initialization and uncertainties on orbital parameters to be computed with Monte Carlo simulations
-- [ ] Allow an Orbit instance to be initialize using an astropy v3 SkyCoord (see [323](https://github.com/jobovy/galpy/issues/323))
+- [x] Allow an Orbit instance to be initialize using an astropy v3 SkyCoord (see [323](https://github.com/jobovy/galpy/issues/323))
 - [ ] !Orbit factories: initialize many orbits at the same time from a list of initial conditions
 - [ ] Orbit method that returns the guiding-star radius (simply using the ``Potential.rl`` function)
 - [ ] Plot the epicycle approximation to an orbit
