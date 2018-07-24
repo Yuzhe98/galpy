@@ -39,7 +39,8 @@ Potentials
 Orbit integration and orbits
 ------------------------------
 
-- [ ] !Add support for dynamical friction (note: there is an [old branch](https://github.com/jobovy/galpy/tree/dev_galpy_dynamfric) where this was started that could serve as a starting point; there is also a [newer branch](https://github.com/jobovy/galpy/tree/dynamfric))
+- [x] !Add support for dynamical friction (**done!** in [#346](https://github.com/jobovy/galpy/pull/346))
+- [ ] !Add support for dynamical friction in C
 - [ ] Integrate R(Z)Orbits in C without integrating phi [see [this issue](https://github.com/jobovy/galpy/issues/28)]
 - [ ] !Better orbit integration: Add interpolation methods for integrators such that the step size can be larger than the requested output time step (right now, the step size is always smaller than the requested output step size, but for sufficiently smooth potentials, the step size can sometimes be increased with intermediate points found through interpolation; see NR).
 - [ ] !Implement the integration of the phase-space volume (using Orbit.integrate_dxdv) for 3D orbits. This will require writing the integration routine that uses all of the relevant second derivatives of the potential, both in python and C, and implementing the necessary second derivatives for a large number of potentials (in python and C).
