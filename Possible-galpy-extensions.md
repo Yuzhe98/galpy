@@ -11,7 +11,7 @@ Potentials
 - [ ] Add new potentials (see [#232](https://github.com/jobovy/galpy/pull/232) or [#242](https://github.com/jobovy/galpy/pull/242) for example pull requests for new potentials): e.g.,
     - [x] A Tri-axial logarithmic potential
     - [ ] An Einasto density profile
-    - [ ] The perfect ellipsoid ([de Zeeuw 1985](http://adsabs.harvard.edu/abs/1985MNRAS.216..273D))
+    - [x] The perfect ellipsoid ([de Zeeuw 1985](http://adsabs.harvard.edu/abs/1985MNRAS.216..273D))
     - [ ] A triaxial Staeckel potential in a sensible way
     - [x] A radially exponential disk with a vertical sech profile, or with a general vertical profile (**done!** through DiskSCFPotential)
     - [ ] A power-law potential with flattening in the density (straightforward based on TwoPowerTriaxialPotential)
