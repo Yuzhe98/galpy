@@ -14,12 +14,12 @@ Potentials
     - [x] The perfect ellipsoid ([de Zeeuw 1985](http://adsabs.harvard.edu/abs/1985MNRAS.216..273D))
     - [ ] A triaxial Staeckel potential in a sensible way
     - [x] A radially exponential disk with a vertical sech profile, or with a general vertical profile (**done!** through DiskSCFPotential)
-    - [ ] A power-law potential with flattening in the density (straightforward based on TwoPowerTriaxialPotential)
-    - [ ] A power-law potential with an exponential cut-off and flattening in the density (bulge model in Binney & Tremaine 2008; straightforward based on TwoPowerTriaxialPotential)
+    - [ ] A power-law potential with flattening in the density (straightforward based on EllipsoidalPotential)
+    - [ ] A power-law potential with an exponential cut-off and flattening in the density (bulge model in Binney & Tremaine 2008; straightforward based on EllipsoidalPotential)
     - [x] TwoPowerSphericalPotentials with flattening in the density (halo model in Binney & Tremaine 2008)
     - [x] Double exponential disk with a central hole (ISM model in Binney & Tremaine 2008) (**done!** in [jobovy/diskscf](https://github.com/jobovy/galpy/tree/diskscf))
-    - [ ] The potential of a thin shell (for educational purposes)
-    - [ ] The potential of a razor-thin ring (for educational purposes)
+    - [x] The potential of a thin shell (for educational purposes)
+    - [x] The potential of a razor-thin ring (for educational purposes)
     - [ ] !The potential of a donut ring
     - [ ] Models 1 and 2 of Binney & Tremaine (2008) [requires the three potentials above)
     - [x] A three-dimensional spiral potential (**done** in [#305](https://github.com/jobovy/galpy/pull/305))
