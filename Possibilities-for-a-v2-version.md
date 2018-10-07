@@ -17,6 +17,7 @@
 * _Comments_:
   * Again nothing really holding back from starting this in v1.x series, because it does not _have_ to break things (but might)
   * Would ultimately be most useful if it could be combined with automatic compilation of C extension
+* **Simplify names of general potential routines, e.g., ``evaluateRforces`` --> ``Rforce``.** 
 
 ## Orbit framework
 
