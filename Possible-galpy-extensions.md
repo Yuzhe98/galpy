@@ -50,7 +50,7 @@ Orbit integration and orbits
 - [ ] Allow uncertainties to be provided at Orbit initialization and uncertainties on orbital parameters to be computed with Monte Carlo simulations
 - [x] Allow an Orbit instance to be initialize using an astropy v3 SkyCoord (see [323](https://github.com/jobovy/galpy/issues/323))
 - [ ] !Orbit factories: initialize many orbits at the same time from a list of initial conditions
-- [ ] Orbit method that returns the guiding-star radius (simply using the ``Potential.rl`` function)
+- [x] Orbit method that returns the guiding-star radius (simply using the ``Potential.rl`` function)
 - [ ] Plot the epicycle approximation to an orbit
 - [ ] !Animate the epicycle approximation to an orbit
 
@@ -74,6 +74,7 @@ Distribution functions
   - [ ] The Hernquist DF
   - [ ] The isochrone DF
   - [ ] General Eddington inversion
+  - [ ] King model
 - [ ] Implement action-based DFs for NFW halos
 - [ ] Generalize diskdf to be able to use any potential [see [this issue](https://github.com/jobovy/galpy/issues/7)]
 - [ ] Implement a particle-spray model for tidal streams (see, e.g., [Fardal et al.](http://adsabs.harvard.edu/abs/2015MNRAS.452..301F))
@@ -88,4 +89,5 @@ Miscellaneous
 - [ ] !Add support for interacting with N-body codes like NEMO or Gadget. This includes
      - [x] Translate galpy potentials to external potentials that can be used with NEMO; **done!** (at least partially)
      - [ ] Use galpy to sample initial conditions (e.g., for a disk using quasiisothermaldf) and write commands/files to run these through N-body codes (with or without an external potential).
-     - [x] Translate galpy potentials to external potentials that can be used with Gadget/Gizmo. Make a shared library that these codes can link to.
+     - [x] Translate galpy potentials to external potentials that can be used with NEMO.
+     - [ ] Translate galpy potentials to external potentials that can be used with Gadget/Gizmo. Make a shared library that these codes can link to.
