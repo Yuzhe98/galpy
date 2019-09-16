@@ -46,10 +46,10 @@ Orbit integration and orbits
 - [ ] !Implement the integration of the phase-space volume (using Orbit.integrate_dxdv) for 3D orbits. This will require writing the integration routine that uses all of the relevant second derivatives of the potential, both in python and C, and implementing the necessary second derivatives for a large number of potentials (in python and C).
 - [ ] Add the IAS15 symplectic integrator ([Rein & Spiegel 2015](http://adsabs.harvard.edu/abs/2015MNRAS.446.1424R)); cannot use the rebound version, as that is incompatible GPL'ed code.
 - [x] Add the Dormand-Prince 853 integrator (**done** in [#363](https://github.com/jobovy/galpy/pull/363)).
-- [ ] Allow orbits to be plotted in a rotating frame (i.e., write a wrapper that makes use of the general orbit plotting)
-- [ ] Allow uncertainties to be provided at Orbit initialization and uncertainties on orbital parameters to be computed with Monte Carlo simulations --> Use ``Orbits`` class once it's done?
+- [ ] Allow orbits to be plotted in a rotating frame (i.e., write a wrapper that makes use of the general orbit plotting; essentially **done** now that arbitrary functions of the orbit coordinates can be fitted using ``numexpr`` [see example in the docs])
+- [ ] Allow uncertainties to be provided at Orbit initialization and uncertainties on orbital parameters to be computed with Monte Carlo simulations --> Use ``Orbits`` class
 - [x] Allow an Orbit instance to be initialize using an astropy v3 SkyCoord (see [323](https://github.com/jobovy/galpy/issues/323))
-- [ ] !Orbit factories: initialize many orbits at the same time from a list of initial conditions (underway in [jobovy/orbits](https://github.com/jobovy/galpy/tree/orbits))
+- [x] !Orbit factories: initialize many orbits at the same time from a list of initial conditions (**done**  in [#384](https://github.com/jobovy/galpy/pull/384))
 - [x] Orbit method that returns the guiding-star radius (simply using the ``Potential.rl`` function)
 - [ ] Plot the epicycle approximation to an orbit
 - [ ] !Animate the epicycle approximation to an orbit
@@ -89,5 +89,5 @@ Miscellaneous
 - [ ] !Add support for interacting with N-body codes like NEMO or Gadget. This includes
      - [x] Translate galpy potentials to external potentials that can be used with NEMO; **done!** (at least partially)
      - [ ] Use galpy to sample initial conditions (e.g., for a disk using quasiisothermaldf) and write commands/files to run these through N-body codes (with or without an external potential).
-     - [x] Translate galpy potentials to external potentials that can be used with NEMO.
      - [ ] Translate galpy potentials to external potentials that can be used with Gadget/Gizmo. Make a shared library that these codes can link to.
+     - [x] Translate galpy potentials to external potentials that can be used with AMUSE. (**done** using ``potential.to_amuse``)
