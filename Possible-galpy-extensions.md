@@ -34,7 +34,7 @@ Potentials
 - [ ] !Add rotation, tumbling, and movement of center of potential more generally as a wrapper around other potentials in a sensible way in C
 - [ ] Add general methods to return forces in rectangular coordinates (building them from the standard Rforce,zforce,phiforce).
 - [ ] Add general methods to return forces in spherical coordinates (building them from the standard Rforce,zforce,phiforce).
-- [ ] The zero-velocity curve for axisymmetric potentials.
+- [ ] The zero-velocity curve for axisymmetric potentials (in progress in [jobovy/zvc](https://github.com/jobovy/galpy/tree/zvc)).
 
 Orbit integration and orbits
 ------------------------------
