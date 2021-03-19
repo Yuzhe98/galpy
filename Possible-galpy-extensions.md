@@ -70,11 +70,12 @@ Action-angle
 
 Distribution functions
 ------------------------
-- [ ] Implement simple spherical DFs:
-  - [ ] The Hernquist DF
-  - [ ] The isochrone DF
-  - [ ] General Eddington inversion
-  - [ ] King model
+- [x] Implement simple spherical DFs:
+  - [x] The Hernquist DF
+  - [ ] The isochrone DF (not done explicitly, but can be obtained using general Eddington)
+  - [x] General Eddington inversion
+  - [x] King model
+  - [x] General spherical ergodic, Osipkov-Merritt, or constant-anisotropy DFs done now
 - [ ] Implement action-based DFs for NFW halos
 - [ ] Generalize diskdf to be able to use any potential [see [this issue](https://github.com/jobovy/galpy/issues/7)]
 - [ ] Implement a particle-spray model for tidal streams (see, e.g., [Fardal et al.](http://adsabs.harvard.edu/abs/2015MNRAS.452..301F))
