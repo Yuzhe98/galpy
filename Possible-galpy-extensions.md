@@ -12,7 +12,7 @@ Potentials
     - [x] A Tri-axial logarithmic potential
     - [ ] An Einasto density profile
     - [x] The perfect ellipsoid ([de Zeeuw 1985](http://adsabs.harvard.edu/abs/1985MNRAS.216..273D))
-    - [ ] A triaxial Staeckel potential in a sensible way
+    - [ ] A triaxial Staeckel potential in a sensible way (other than the perfect ellipsoid)
     - [x] A radially exponential disk with a vertical sech profile, or with a general vertical profile (**done!** through DiskSCFPotential)
     - [ ] A power-law potential with flattening in the density (straightforward based on EllipsoidalPotential)
     - [ ] A power-law potential with an exponential cut-off and flattening in the density (bulge model in Binney & Tremaine 2008; straightforward based on EllipsoidalPotential)
@@ -27,9 +27,9 @@ Potentials
     - [x] Basis function expansions, w/ a way to compute them for a given potential. For example, [Hernquist & Ostriker](http://adsabs.harvard.edu/abs/1992ApJ...386..375H) (**done!** in [SeaifanAladdin/SCF](https://github.com/SeaifanAladdin/galpy/tree/SCF))
     - [x] !Basis function expansions for the disk (see Binney & Tremaine); for axisymmetric potentials this could potentially be done using a modification of the method of Dehnen & Binney (1998): use approximate rho(R,z) = f(R) h(z) and solve Poisson equation for their Phi_ME using SCF. (**done!** in [jobovy/diskscf](https://github.com/jobovy/galpy/tree/diskscf))
     - [x] A three-Miyamoto-Nagai disk approximation to an exponential disk from [Smith et al. (2015)](http://arxiv.org/abs/1502.00627)
-- [ ] Add adiabatically-contracted NFW potentials or add adiabatic contraction more generally
+- [x] Add adiabatically-contracted NFW potentials or add adiabatic contraction more generally (**done** as part of [#447](https://github.com/jobovy/galpy/pull/447))
 - [x] Wrapper that allows mass growth over time (**done!**, see cases of the new WrapperPotential classes)
-- [ ] General mass/amplitude growth wrapper that uses a basis expansion or spline of the 1D growth to support arbitrary growth histories
+- [ ] General mass/amplitude growth wrapper that uses a basis expansion or spline of the 1D growth to support arbitrary growth histories; or use numba to pass an arbitrary function to C? Like in `wendy`
 - [ ] !Add rotation, tumbling, and movement of center of potential more generally as a wrapper around other potentials
 - [ ] !Add rotation, tumbling, and movement of center of potential more generally as a wrapper around other potentials in a sensible way in C
 - [ ] Add general methods to return forces in rectangular coordinates (building them from the standard Rforce,zforce,phiforce).
