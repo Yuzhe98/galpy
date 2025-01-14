@@ -44,7 +44,7 @@ Orbit integration and orbits
 - [ ] Integrate R(Z)Orbits in C without integrating phi [see [this issue](https://github.com/jobovy/galpy/issues/28)]
 - [ ] !Better orbit integration: Add interpolation methods for integrators such that the step size can be larger than the requested output time step (right now, the step size is always smaller than the requested output step size, but for sufficiently smooth potentials, the step size can sometimes be increased with intermediate points found through interpolation; see NR).
 - [ ] !Implement the integration of the phase-space volume (using Orbit.integrate_dxdv) for 3D orbits. This will require writing the integration routine that uses all of the relevant second derivatives of the potential, both in python and C, and implementing the necessary second derivatives for a large number of potentials (in python and C).
-- [ ] Add the IAS15 symplectic integrator ([Rein & Spiegel 2015](http://adsabs.harvard.edu/abs/2015MNRAS.446.1424R)); cannot use the rebound version, as that is incompatible GPL'ed code.
+- [x] Add the IAS15 symplectic integrator ([Rein & Spiegel 2015](http://adsabs.harvard.edu/abs/2015MNRAS.446.1424R)); cannot use the rebound version, as that is incompatible GPL'ed code. (**done** in [#643](https://github.com/jobovy/galpy/pull/643))
 - [x] Add the Dormand-Prince 853 integrator (**done** in [#363](https://github.com/jobovy/galpy/pull/363)).
 - [ ] Allow orbits to be plotted in a rotating frame (i.e., write a wrapper that makes use of the general orbit plotting; essentially **done** now that arbitrary functions of the orbit coordinates can be fitted using ``numexpr`` [see example in the docs])
 - [ ] Allow uncertainties to be provided at Orbit initialization and uncertainties on orbital parameters to be computed with Monte Carlo simulations --> Use ``Orbits`` class
@@ -78,7 +78,7 @@ Distribution functions
   - [x] General spherical ergodic, Osipkov-Merritt, or constant-anisotropy DFs done now
 - [ ] Implement action-based DFs for NFW halos
 - [ ] Generalize diskdf to be able to use any potential [see [this issue](https://github.com/jobovy/galpy/issues/7)]
-- [ ] Implement a particle-spray model for tidal streams (see, e.g., [Fardal et al.](http://adsabs.harvard.edu/abs/2015MNRAS.452..301F))
+- [x] Implement a particle-spray model for tidal streams (see, e.g., [Fardal et al.](http://adsabs.harvard.edu/abs/2015MNRAS.452..301F))
 - [ ] Improvements in the DF for a tidal stream:
   - [ ] Perform actionAngle approximations as (x,v) -> (J,O,a) rather than (R,vR,...) -> (J,O,a) [see [this issue](https://github.com/jobovy/galpy/issues/113)]
   - [ ] Add error convolutions to callMarg [see [this issue](https://github.com/jobovy/galpy/issues/114)]
